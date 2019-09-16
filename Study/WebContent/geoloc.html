@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name ="viewport" content="width=device-width,initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+<button onclick="getGeolocation">위치 정보 얻기</button>
+<div id = "target"><</div>
+<script>
+if(navigator.geolocation) {
+	navigator.geolocation.getCurrentPosition(showLocation);
+}
+
+
+/* var myDiv = document.getElementById("target");
+function getGeolocation() {
+	if(navisgator.geoloacation) {
+		
+		
+		navigator.geolocation.getCurrentPosition(showLocation);
+	}
+}
+
+function showLocation(location) {
+	myDiv.innerHTML = "(위도: " + location.coords.latitude + 
+			", 경도 : " + Location.coords.longitude + ")"
+	
+} */
+</script>
+</body>
+</html>
